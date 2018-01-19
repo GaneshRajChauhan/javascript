@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>
+
+
+        Ganesh
+    </title>
+</head>
+
+<body>
+    <h1>Helo this is Ganesh Raj Chauhan</h1>
+</body>
+<script>
+
+
+
+    //objects
+    //collection of the namve-value paris
+
+
+    //     var myObject = new Object();
+    //     myObject['1'] = "Chris";
+    //     myObject["2"] = "Sally";
+    //     myObject["3"] = "Bob";
+
+
+
+    //     var myOtherObject = {
+    //         1: "Chris",
+    //         2: "Sally",
+    //         3: "Bob",
+    //         4: "Billy",
+    //         5: "Jane"
+    //     }
+    //     myOtherObject['6'] = "Ashley";
+    //     var anotherObject = {
+    //         firstName: "Chris",
+    //         lastName: "Smith",
+    //         age: 50,
+    //         phone: '55555-555505555',
+    //         number: {
+    //             mobile: "55-5555",
+    //             home: "555-5555"
+    //         },
+    //         address: "123 Fake st."
+    //     }
+
+    //     var donut = {
+    //         type: "coconut",
+    //         glazed: true,
+    //         sweetness: 8,
+    //         hasChocolate: false,
+    //         sayHi:function(){
+    //             console.log("Hi");
+    //         },
+    //         sayType:function(){
+    //             console.log("type: "+this.type);
+    //         },
+    //         showSweetNess:function(){
+    //             console.log("Sweetness: "+this.sweetness+"/10");
+    //         }
+    //     }
+
+    //    function sayHi()
+    //    {
+    //        console.log("Hi");
+    //    }
+
+
+
+    //constructor pattern for creating objects
+    function donut(type, glazed, sweetness, hasChocolate) {
+        this.type = type;
+        this.glazed = glazed;
+        this.sweetness = sweetness;
+        this.hasChocolate = hasChocolate;
+        this.sayType = function () {
+            console.log("Type: " + this.type);
+        };
+        this.showSweetNess = function () {
+            console.log("Sweetness: " + this.sweetness + "/10");
+        };
+    }
+
+    var cocunotDonut = new donut("coconut", false, 8, true);
+    var vanillaDunut = new donut("Vanilla", false, 10, true);
+    cocunotDonut.testgood = true;
+    // console.log(myObject);
+    // console.log(myOtherObject);
+    // console.log(anotherObject);
+    // console.log(anotherObject.age);
+    // console.log(anotherObject.number.mobile);
+    // console.log(donut);
+    // donut.sayHi();
+    // donut.sayType();
+    // donut.showSweetNess();
+
+    console.log(cocunotDonut);
+    console.log(vanillaDunut);
+
+</script>
+
+</html>
